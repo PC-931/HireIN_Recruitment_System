@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Web", "1.Web", "{5E0F620B-E9B5-45FE-A12E-58FC0822BAE4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Data", "2.Data", "{0C601AC2-B45E-4E31-B466-436B32DBD94E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.Entity", "3.Entity", "{A5D3846E-B188-4A83-81FE-40BEDE39440A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechM.RecruitmentSystem.Web", "TechM.RecruitmentSystem.Web\TechM.RecruitmentSystem.Web.csproj", "{2A11C346-2732-4670-A972-F9216FA656C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechM.RecruitmentSystem.DataService", "TechM.RecruitmentSystem.DataService\TechM.RecruitmentSystem.DataService.csproj", "{E1371441-6444-4999-BA37-1CEEF1EAA5C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechM.RecruitmentSystem.Entity", "TechM.RecruitmentSystem.Entity\TechM.RecruitmentSystem.Entity.csproj", "{F6F53177-40BF-46BC-9950-E7619C5B4925}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A11C346-2732-4670-A972-F9216FA656C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A11C346-2732-4670-A972-F9216FA656C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A11C346-2732-4670-A972-F9216FA656C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A11C346-2732-4670-A972-F9216FA656C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1371441-6444-4999-BA37-1CEEF1EAA5C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1371441-6444-4999-BA37-1CEEF1EAA5C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1371441-6444-4999-BA37-1CEEF1EAA5C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1371441-6444-4999-BA37-1CEEF1EAA5C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6F53177-40BF-46BC-9950-E7619C5B4925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6F53177-40BF-46BC-9950-E7619C5B4925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6F53177-40BF-46BC-9950-E7619C5B4925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6F53177-40BF-46BC-9950-E7619C5B4925}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2A11C346-2732-4670-A972-F9216FA656C2} = {5E0F620B-E9B5-45FE-A12E-58FC0822BAE4}
+		{E1371441-6444-4999-BA37-1CEEF1EAA5C4} = {0C601AC2-B45E-4E31-B466-436B32DBD94E}
+		{F6F53177-40BF-46BC-9950-E7619C5B4925} = {A5D3846E-B188-4A83-81FE-40BEDE39440A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD5D0AB5-8B00-489D-828D-26CBB73D9D6A}
+	EndGlobalSection
+EndGlobal
