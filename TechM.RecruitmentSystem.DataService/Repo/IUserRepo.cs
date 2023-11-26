@@ -1,17 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using TechM.RecruitmentSystem.Entity;
 
 namespace TechM.RecruitmentSystem.DataService.Repo
 {
     public interface IUserRepo
     {
-        void Read(string email, string pass);
-        void Create(User newUser);
-        void Update(User updUser);
-        void Delete(User usr);
+        List<User> ReadAll();
+        User Read(string email, string pass);
+        bool Create(User newUser);
+        bool Update(User updUser);
+        bool Delete(User usr);
     }
 }

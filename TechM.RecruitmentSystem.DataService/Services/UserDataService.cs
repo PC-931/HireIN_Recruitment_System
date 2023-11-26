@@ -1,37 +1,27 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TechM.RecruitmentSystem.Entity;
 
 namespace TechM.RecruitmentSystem.DataService.Services
 {
     public class UserDataService : IUserDataService
     {
-        private AppDbContext _appDbContext;
-        private UserManager<User> userManager;
-        private UserStore<User> userStore;
+        private UserServices userServices;
 
         public UserDataService()
         {
-            _appDbContext = new AppDbContext();
-            userStore = new UserStore<User>(_appDbContext);
-            userManager = new UserManager<User>(userStore);
+            userServices = new UserServices();
         }
 
-        public User Login(string email, string pass)
+        public User Login(User u)
         {
-            User user = userManager.Find(email, pass);
+            User user = userServices.Read(u.Email, u.Password);
             return user;
         }
 
         public bool Register(User newUser)
         {
-            IdentityResult result = userManager.Create(newUser, newUser.Password);
-            if (result.Succeeded)
+            if ( userServices.Create(newUser) )
             {
                 return true;
             }

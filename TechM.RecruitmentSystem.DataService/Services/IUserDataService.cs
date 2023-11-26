@@ -10,7 +10,7 @@ namespace TechM.RecruitmentSystem.DataService.Services
 {
     public interface IUserDataService 
     {
-        User Login(string email, string pass);
+        User Login(User u);
         bool Register(User newUser);
     }
 }

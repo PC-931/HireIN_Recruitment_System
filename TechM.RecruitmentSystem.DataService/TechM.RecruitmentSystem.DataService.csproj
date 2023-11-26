@@ -67,6 +67,7 @@
     <Compile Include="Repo\IUserRepo.cs" />
     <Compile Include="Services\IUserDataService.cs" />
     <Compile Include="Services\UserDataService.cs" />
+    <Compile Include="Services\UserServices.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
